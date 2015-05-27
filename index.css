@@ -87,6 +87,10 @@ body {
 	box-shadow: 0 6px 6px 3px #3A5795;
 }
 
+.black-circ:hover {
+	box-shadow: 0 6px 6px 3px #000000;
+}
+
 .red-circ:hover {
 	box-shadow: 0 6px 6px 3px #FF0000;
 }
