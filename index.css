@@ -11,13 +11,23 @@ body {
 
 	z-index: 1;
 
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
+
+	overflow: auto;
+}
+
+#top-box {
+	position: fixed;
+	top: 0px;
+	width: 100%;
 }
 
 #main-box {
 	z-index: 10;
+
+	position: relative;
 
 	margin: auto;
 	vertical-align: middle;
@@ -26,7 +36,7 @@ body {
 	height: 200px;
 	background-color: white;
 
-	box-shadow: 0 6px 6px 0px #aaa;
+	box-shadow: 0 3px 12px 0px #000;
 }
 
 #symbol {
@@ -48,12 +58,13 @@ body {
 }
 
 .container {
+	margin-top: 250px;
 
 }
 
 .link {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	margin: auto;
 }
 
@@ -70,6 +81,10 @@ body {
 
 .blue-circ:hover {
 	box-shadow: 0 6px 6px 3px #0088FA;
+}
+
+.fb-blue-circ:hover {
+	box-shadow: 0 6px 6px 3px #3A5795;
 }
 
 .red-circ:hover {
