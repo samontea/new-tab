@@ -1,0 +1,41 @@
+#bg {
+	font-family: Sans-Serif;
+
+	background: white url(eight_horns/eight_horns/eight_horns.png) repeat top right;
+
+	height: 100%;
+	width: 100%;
+
+	z-index: 1;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#main-box {
+	z-index: 10;
+
+	margin: auto;
+	vertical-align: middle;
+
+	width: 500px;
+	height: 200px;
+	background-color: white;
+
+	box-shadow: 0 6px 6px 0px #aaa;
+}
+
+#symbol {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 25px;
+}
+
+#clock {
+	text-align: center;
+	padding-top: 10px;
+
+	font-size: 100px;
+	color: black;
+}
