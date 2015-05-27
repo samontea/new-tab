@@ -1,7 +1,10 @@
+body {
+	background: white url(images/symphony/symphony.png) repeat top right;
+}
+
 #bg {
 	font-family: Sans-Serif;
-
-	background: white url(eight_horns/eight_horns/eight_horns.png) repeat top right;
+	background: white url(images/symphony/symphony.png) repeat top right;
 
 	height: 100%;
 	width: 100%;
@@ -34,8 +37,79 @@
 
 #clock {
 	text-align: center;
-	padding-top: 10px;
-
 	font-size: 100px;
 	color: black;
+}
+
+#date {
+	text-align: center;
+	font-size: 20px;
+	color:black;
+}
+
+.container {
+
+}
+
+.link {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: auto;
+}
+
+.link-circ {
+	height: 300px;
+	width: 300px;
+	margin: auto;
+	border-radius: 150px;
+	background-color:#fff;
+
+	box-shadow: 0 6px 6px 3px #aaa;
+	transition: all .5s ease;
+}
+
+.blue-circ:hover {
+	box-shadow: 0 6px 6px 3px #0088FA;
+}
+
+.red-circ:hover {
+	box-shadow: 0 6px 6px 3px #FF0000;
+}
+
+.link-circ > img {
+	display: block;
+	padding-top: 75px;
+	vertical-align: middle;
+	height:150px;
+	margin: auto;
+}
+
+[class*='column-'] {
+	float: left;
+	min-height: 1px;
+	width: 16.66%;
+}
+
+.column-one {
+	width: 16.66%;
+}
+
+.column-two {
+	width: 33.33%;
+}
+
+.column-three {
+	width: 50%;
+}
+
+.column-four {
+	width: 66.66%;
+}
+
+.column-five {
+	width: 83.33%;
+}
+
+.column-six {
+	width: 100%;
 }

@@ -3,16 +3,46 @@
 		<title> &#x2643 </title>
 		<link rel=stylesheet href="index.css" type="text/css">
 	</head>
-	<body onload="updateClock(); setInterval('updateClock()', 1000 )">
+	<body onload="updateClock(); setInterval('updateClock()', 1000 ); updateDate(); setInterval('updateDate()', 1000)">
 		<div id="bg">
 			<div id="main-box">
 				<div id="symbol">&#x2643</div>
 				<div id="clock">&nbsp;</div>
+				<div id="date">&nbsp;</div>
+			</div>
+			<div class="container">
+				<div class="column-two">
+					<div class="link">
+						<a href="https://www.google.com/calendar/">
+							<div class="link-circ blue-circ">
+								<img src="images/calendar.png" />
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="column-two">
+					<div class="link">
+						<a href="https://inbox.google.com">
+							<div class="link-circ blue-circ">
+								<img src="images/inbox.png" />
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="column-two">
+					<div class="link">
+						<a href="https://inbox.google.com">
+							<div class="link-circ red-circ">
+								<img src="images/wunderlist.png" />
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
 	<script>
-	function updateClock ( )
+	function updateClock ()
 	{
 		var currentTime = new Date ( );
 
@@ -22,14 +52,17 @@
 		// Pad the minutes and seconds with leading zeros, if required
 		currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
 
-		// Convert an hours component of "0" to "12"
-		currentHours = ( currentHours == 0 ) ? 12 : currentHours;
-
 		// Compose the string for display
 		var currentTimeString = currentHours + ":" + currentMinutes;
 
 		// Update the time display
 		document.getElementById("clock").firstChild.nodeValue = currentTimeString;
+	}
+
+	function updateDate() {
+		var currentTime = new Date ();
+
+		document.getElementById("date").firstChild.nodeValue = currentTime.getDate() + "." + currentTime.getMonth() + "." + currentTime.getFullYear();
 	}
 
 	</script>
