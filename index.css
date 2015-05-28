@@ -37,8 +37,10 @@ body {
 	height: 200px;
 	background-color: white;
 
+	color: #164450;
+
 	border-radius: 3px;
-	box-shadow: 0 10px 25px 0px #666;
+	box-shadow: 0 10px 25px 0px #404450;
 }
 
 #symbol {
@@ -50,13 +52,11 @@ body {
 #clock {
 	text-align: center;
 	font-size: 100px;
-	color: black;
 }
 
 #date {
 	text-align: center;
 	font-size: 20px;
-	color:black;
 }
 
 .container {
