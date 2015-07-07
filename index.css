@@ -1,3 +1,42 @@
+@-webkit-keyframes bodyonload {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-moz-keyframes bodyonload {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes bodyonload {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@-webkit-keyframes toponload {
+	from { top: 0; }
+	to { top: 25; }
+}
+@-moz-keyframes toponload {
+	from { top: 0; }
+	to { top: 25; }
+}
+@keyframes toponload {
+	from { top: 0; }
+	to { top: 25; }
+}
+
+@-webkit-keyframes containeronload {
+	from { margin-top: 200; }
+	to { margin-top: 250; }
+}
+@-moz-keyframes containeronload {
+	from { margin-top: 200; }
+	to { margin-top: 250; }
+}
+@keyframes containeronload {
+	from { margin-top: 200; }
+	to { margin-top: 250; }
+}
+
 body {
 	background: white url(images/symphony/symphony.png) repeat top right;
 }
@@ -18,8 +57,13 @@ body {
 	overflow: auto;
 }
 
+#main-container {
+	animation: bodyonload 1s ease;
+}
+
 #top-box {
 	position: absolute;
+	animation: toponload 1s ease;
 	top: 25px;
 	width: 100%;
 	height: 0px;
@@ -40,7 +84,7 @@ body {
 	color: #165460;
 
 	border-radius: 3px;
-	box-shadow: 0 7px 15px 0px #888;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 7px 0px;
 }
 
 #symbol {
@@ -60,8 +104,8 @@ body {
 }
 
 .container {
+	animation: containeronload 1s ease;
 	margin-top: 250px;
-
 }
 
 .link {
@@ -77,24 +121,24 @@ body {
 	border-radius: 150px;
 	background-color:#fff;
 
-	box-shadow: 0 6px 6px 3px #aaa;
+	box-shadow: 0 6px 6px 3px rgba(0, 0, 0, 0.5);
 	transition: all .5s ease;
 }
 
 .blue-circ:hover {
-	box-shadow: 0 6px 6px 3px #0088FA;
+	box-shadow: 0 6px 6px 3px rgba(0, 136, 248, 0.75);  /* #0088FA */
 }
 
 .fb-blue-circ:hover {
-	box-shadow: 0 6px 6px 3px #3A5795;
+	box-shadow: 0 6px 6px 3px rgba(58, 87, 149, 0.75); /* #3A5795 */
 }
 
 .black-circ:hover {
-	box-shadow: 0 6px 6px 3px #000000;
+	box-shadow: 0 6px 6px 3px rgba(0, 0, 0, 0.75); /* #000000 */
 }
 
 .red-circ:hover {
-	box-shadow: 0 6px 6px 3px #FF0000;
+	box-shadow: 0 6px 6px 3px rgba(255, 0, 0, 0.75); /*  #FF0000 */
 }
 
 .link-circ > img {
