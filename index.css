@@ -149,6 +149,17 @@ body {
 	margin: auto;
 }
 
+.grid-container {
+	margin: 20px 0px 20px 0px;
+	width: 100%;
+}
+
+.grid-container::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 [class*='column-'] {
 	float: left;
 	min-height: 1px;
